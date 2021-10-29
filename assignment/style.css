@@ -1,11 +1,85 @@
 /* Give your page a fun background color */
+  body {
+    animation-duration: 28s;
+    animation-iteration-count: infinite;
+    animation-name: page;
+    background-color: #ff8c00;
+    }
+
+    @keyframes page {
+      0% {background-color: #ff8c00;}
+      25% {background-color: black;}
+      50% {background-color: #ff8c00;}
+      75% {background-color: black;}
+      100% {background-color: #ff8c00;}
+    }
+
 
 /* Make the header and footer a different color from the background */
+    .header {
+      background-color:black;
+      border:#C0C0C0;
+      border-style:dotted;
+    }
 
+    .footer {
+      background-color: black;
+      border:#C0C0C0;
+      border-style: dotted;
+    }
 /* Align the h1 containing your name in the center of the header*/
+    h1 {
+      color: red;
+      font-family: eater;
+      font-size: 120px;
+      text-align: center;
+    }
 
+    h2 {
+      color: green;
+      font-family: emilys-candy;
+      font-size: 42px;
+      text-align: center;
+    }
 /* Make your p tag a different color and italic */
-
+    p {
+      color: red;
+      font-family: eater;
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+    }
 /* Put a border around your image */
+    .ghost {
+      float: left;
+      left: 10%;
+      position:relative;
+      top: -300px;
+      width:13%;
+    }
 
+    .halloween {
+      border: 5px solid #C0C0C0;
+      left: 40%;
+      margin: 0;
+      position: relative;
+      top: 60%;
+      -ms-tranform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 30%;
+    }
+
+    .pumpkin {
+      float: right;
+      position: relative;
+      right: 15%;
+      top: -250px;
+      width: 10%;
+    }
 /* Change the font-family of your list */
+    ul, li {
+      color: #C0C0C0;
+      font-family: emilys-candy;
+      font-size: 40px;
+      text-align: center;
+    }
