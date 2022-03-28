@@ -51,17 +51,31 @@
     }
 /* Put a border around your image */
     .ghost {
+      animation-direction: alternate;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-name: boo;
+      animation-timing-function: ease-in-out;
       float: left;
       left: 10%;
       position:relative;
-      top: -300px;
+      top: -350px;
       width:13%;
     }
+
+    @keyframes boo {
+      0% {opacity:0;}
+      45% {opacity:0.33;}
+      55% {opacity:0.49}
+      65% {opacity:0.66;}
+      75% {opacity:1;}
+    }
+
 
     .halloween {
       border: 5px solid #C0C0C0;
       left: 40%;
-      margin: 0;
+      margin: 1rem 0 1rem 0;
       position: relative;
       top: 60%;
       -ms-tranform: translateX(-50%);
